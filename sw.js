@@ -1,6 +1,6 @@
 // sw.js — Service worker for offline-first caching
 
-var CACHE_NAME = "fittogpx-v2";
+var CACHE_NAME = "fittogpx-v3";
 var ASSETS = [
     "./",
     "./index.html",
