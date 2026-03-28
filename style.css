@@ -97,6 +97,7 @@ h1 .arrow {
     border-radius: 8px;
     font-size: 0.9rem;
     line-height: 1.5;
+    white-space: pre-line;
 }
 
 #status.success {
@@ -110,9 +111,15 @@ h1 .arrow {
 }
 
 /* Download */
-#download-link {
-    display: inline-block;
+#results {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.download-btn {
+    display: block;
     padding: 0.8rem 2rem;
     background: #4cc9f0;
     color: #1a1a2e;
@@ -123,10 +130,10 @@ h1 .arrow {
     transition: background 0.15s;
 }
 
-#download-link:hover {
+.download-btn:hover {
     background: #3ab8df;
 }
 
-#download-link:active {
+.download-btn:active {
     background: #2ea7ce;
 }

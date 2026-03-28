@@ -17,16 +17,16 @@
 
         <div id="drop-zone">
             <div class="drop-icon">&#128206;</div>
-            <p>Drop a .FIT file here</p>
+            <p>Drop .FIT files here</p>
             <label class="file-label">
-                or choose file
-                <input type="file" id="file-input">
+                or choose files
+                <input type="file" id="file-input" multiple>
             </label>
         </div>
 
         <div id="status" hidden></div>
 
-        <a id="download-link" hidden>Download .GPX</a>
+        <div id="results" hidden></div>
     </main>
 
     <script src="fit.js"></script>
