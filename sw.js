@@ -1,6 +1,6 @@
 // sw.js — Service worker for offline-first caching
 
-var CACHE_NAME = "fittogpx-v1";
+var CACHE_NAME = "fittogpx-v2";
 var ASSETS = [
     "./",
     "./index.html",
@@ -46,7 +46,13 @@ self.addEventListener("activate", function (event) {
 self.addEventListener("fetch", function (event) {
     event.respondWith(
         caches.match(event.request).then(function (cached) {
-            return cached || fetch(event.request);
+            if (cached) return cached;
+            // For navigation requests (e.g. iOS opening the PWA offline),
+            // fall back to the cached index.html
+            if (event.request.mode === "navigate") {
+                return caches.match("./index.html");
+            }
+            return fetch(event.request);
         })
     );
 });
