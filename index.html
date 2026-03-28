@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT to GPX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon-192.png">
+</head>
+<body>
+    <main>
+        <h1>FIT <span class="arrow">&rarr;</span> GPX</h1>
+        <p class="subtitle">Convert Garmin .FIT files to .GPX &mdash; offline, in your browser.</p>
+
+        <div id="drop-zone">
+            <div class="drop-icon">&#128206;</div>
+            <p>Drop a .FIT file here</p>
+            <label class="file-label">
+                or choose file
+                <input type="file" id="file-input" accept=".fit,.FIT">
+            </label>
+        </div>
+
+        <div id="status" hidden></div>
+
+        <a id="download-link" hidden>Download .GPX</a>
+    </main>
+
+    <script src="fit.js"></script>
+    <script src="gpx.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

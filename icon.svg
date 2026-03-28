@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="64" fill="#1a1a2e"/>
+  <text x="256" y="200" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="100" fill="#ffffff">FIT</text>
+  <text x="256" y="290" text-anchor="middle" font-family="sans-serif" font-size="60" fill="#4cc9f0">&#8595;</text>
+  <text x="256" y="390" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="100" fill="#4cc9f0">GPX</text>
+</svg>
